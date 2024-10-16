@@ -33,5 +33,4 @@ exports.countBooks = onRequest((req, res) => {
   });
 });
 
-
-
+/* eslint-disable */
