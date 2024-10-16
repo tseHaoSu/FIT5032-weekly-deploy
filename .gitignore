@@ -1,6 +1,7 @@
 node_modules
 
 src/firebaseConfig.ts
+firebaseConfig.ts
 
 # Ignore environment variables
 .env
