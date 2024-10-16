@@ -60,7 +60,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory("/FIT5032-weekly-deploy/"),
+  history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 
