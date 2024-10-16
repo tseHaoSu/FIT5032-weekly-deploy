@@ -1,1 +1,10 @@
 node_modules
+
+firebaseConfig.ts
+
+# Ignore environment variables
+.env
+
+# Ignore build output
+dist
+build
