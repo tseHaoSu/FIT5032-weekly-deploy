@@ -6,6 +6,7 @@ import './assets/index.css'
 import { VueFire, VueFireAuth } from "vuefire";
 import { firebaseApp } from "./firebaseConfig";
 import { createPinia } from "pinia";
+import { onMounted } from "vue";
 
 const app = createApp(App);
 const pinia = createPinia();
@@ -18,3 +19,11 @@ app.use(VueFire, {
 });
 
 app.mount("#app");
+
+export default {
+  setup() {
+    onMounted(() => {
+      document.body.removeAttribute("aria-hidden");
+    });
+  },
+};
