@@ -25,10 +25,10 @@ jobs:
       run: npm run build
 
     - name: Deploy
-      uses: tseHaoSu/FIT5032-weekly-deploy
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        branch: gh-pages
-        folder: dist
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
 
 permissions:
   contents: write
