@@ -7,6 +7,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/FIT5032-weekly-deploy/",
   css: {
     postcss: {
       plugins: [tailwind(), autoprefixer()],
