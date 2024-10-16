@@ -25,7 +25,7 @@ jobs:
       run: npm run build
 
     - name: Deploy
-      uses: tseHaoSu/FIT5032-weekly-deploy@4.1.4
+      uses: tseHaoSu/FIT5032-weekly-deploy
       with:
         branch: gh-pages
         folder: dist
